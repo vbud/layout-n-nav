@@ -1,0 +1,91 @@
+// bower:scss
+// endbower
+
+* {
+	box-sizing: border-box;
+}
+
+//layout
+$breakpoint-sm: 768px;
+body {
+	background: #fafafa;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #333;
+
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.left {
+	order: -1;
+
+	@media (min-width: $breakpoint-sm) {
+		flex: 0 0 180px;
+	}
+}
+
+@media (min-width: $breakpoint-sm) {
+
+	body {
+		flex-direction: row;
+		flex: 1;
+	}
+
+	.right {
+		flex: 0 0 200px;
+	}
+
+	.content {
+		flex: 1;
+	}
+}
+
+//nav
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+a {
+	color: white;
+	&:visited {
+		color: white;
+	}
+}
+
+$nav-item-width: 10em;
+$nav-item-height: 2em;
+.menu {
+	ul {
+		display: none;
+	}
+	li {
+		position: relative;
+		line-height: 2;
+		width: $nav-item-width;
+		background-color: #333;
+		&:hover {
+			background-color: #777;
+		}
+		a {
+			margin: 0 0.5em;
+		}
+	}
+	> li:hover {
+		> ul {
+			display: block;
+			position: absolute;
+			left: $nav-item-width;
+			top: 0;
+		}
+	}
+
+	//top-most menu should fall beneath the parent
+	&.top {
+		> li:hover {
+			> ul {
+				position: static;
+			}
+		}
+	}
+}
