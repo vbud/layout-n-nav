@@ -6,7 +6,7 @@ Using valid HTML and CSS, create a document with three-column layout. The left a
  
 ## Solution
 
-See `app/index.html` and `app/styles/main.scss`. I used flexbox since it works in IE11+, Chrome since v29, and Firefox since v28.
+See [`app/index.html`][index-html] and [`app/styles/main.scss`][main-scss]. I used flexbox since it works in IE11+, Chrome since v29, and Firefox since v28.
 
 If you need a solution that functions in older browsers, I can make a float-based or absolute-positioning-based layout.
 
@@ -20,10 +20,13 @@ Write a short, HTML drop-down menu using native JavaScript to control its behavi
 
 ## Solution
 
-See `app/index.html` and `app/styles/main.scss` I was actually able to do this with just HTML and CSS.
+See [`app/index.html`][index-html] and [`app/styles/main.scss`][main-scss] I was actually able to do this with just HTML and CSS.
 
-I was going to use JavaScript, but the exercise said "bonus points" for reusability, and the CSS solution is simple and reusable. I added a bonus fourth level to show how easy it is to reuse - you can just keep adding on new lists as children of existing lists using identical markup (see lines 49-58 of `app/index.html`).
+I was going to use JavaScript, but the exercise said "bonus points" for reusability, and the CSS solution is simple and reusable. I added a bonus fourth level to show how easy it is to reuse - you can just keep adding on new lists as children of existing lists using identical markup (see [lines 49-58 of `app/index.html`][index-html-l49]).
 
 
 
 [demo]: http://vbud.github.io/layout-n-nav/
+[index-html]: https://github.com/vbud/layout-n-nav/blob/master/app/index.html
+[index-html-l49]: https://github.com/vbud/layout-n-nav/blob/master/app/index.html#L49
+[main-scss]: https://github.com/vbud/layout-n-nav/blob/master/app/styles/main.scss
