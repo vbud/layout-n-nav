@@ -77,7 +77,12 @@ $nav-item-height: 2em;
 			left: $nav-item-width;
 			top: 0;
 		}
-		&:hover {
+		//&:hover {
+		//	>ul {
+		//		display: block;
+		//	}
+		//}
+		&.active {
 			>ul {
 				display: block;
 			}
