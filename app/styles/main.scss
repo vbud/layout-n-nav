@@ -71,18 +71,22 @@ $nav-item-height: 2em;
 			margin: 0 0.5em;
 		}
 	}
-	> li:hover {
+	> li {
 		> ul {
-			display: block;
 			position: absolute;
 			left: $nav-item-width;
 			top: 0;
+		}
+		&:hover {
+			>ul {
+				display: block;
+			}
 		}
 	}
 
 	//top-most menu should fall beneath the parent
 	&.top {
-		> li:hover {
+		> li {
 			> ul {
 				position: static;
 			}
