@@ -7,17 +7,13 @@
 
 	menus.forEach(function(menu) {
 		//turn on 'active' class on hover enter
-		menu.addEventListener('mouseenter', mouseenter, false);
+		menu.addEventListener('mouseenter', function () {
+			this.classList.add('active');
+		}, false);
 		//turn off 'active' class on hover exit
-		menu.addEventListener('mouseleave', mouseleave, false);
+		menu.addEventListener('mouseleave', function () {
+			this.classList.remove('active');
+		}, false);
 	});
-
-	function mouseenter() {
-		this.classList.add('active');
-	}
-
-	function mouseleave() {
-		this.classList.remove('active');
-	}
 
 })();
