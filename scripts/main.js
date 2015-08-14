@@ -1,1 +1,1 @@
-console.log("Nothing to see here...");
+"use strict";!function(){var e=Array.prototype.slice.call(document.querySelectorAll(".menu > li"));e.forEach(function(e){e.addEventListener("mouseenter",function(){this.classList.add("active")},!1),e.addEventListener("mouseleave",function(){this.classList.remove("active")},!1)})}();
