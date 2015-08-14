@@ -22,10 +22,13 @@ Write a short, HTML drop-down menu using native JavaScript to control its behavi
 
 See [`app/index.html`][index.html], [`app/scripts/main.js`][main.js], and [`app/styles/main.scss`][main.scss].
 
-I went for what I think is a reusable approach - if you put the `menu` class on an element and structure the menu the same way, it will just work without any code changes.
+I implemented a reusable approach (unless I am misunderstanding what you mean) - if you put the `menu` class on an element and structure the menu DOM in a conistent way, it will just work without any code changes.
  
 If I have misunderstood the exercise in some way, please let me know!
 
+Some things we could try/test to improve usability could be:
+- Implement a slight delay after a mouseleave event before removing the `active` class. Then the menu doesn't close when a user just barely leaves it.
+- We could even try padding the menu with a few pixels extra space so the elements are bigger than they appear and the `mouseleave` event fires after leaving that extra padded area. I haven't tried this one before - it may present some complications.
 
 
 [demo]: http://vbud.github.io/layout-n-nav/
