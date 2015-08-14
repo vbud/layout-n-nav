@@ -26,6 +26,8 @@ I implemented a reusable approach (unless I am misunderstanding what you mean) -
  
 If I have misunderstood the exercise in some way, please let me know!
 
+The solution should work in IE9+, Firefox 3.5+, and Chrome 1+. 
+
 Some things we could try/test to improve usability could be:
 - Implement a slight delay after a mouseleave event before removing the `active` class. Then the menu doesn't close when a user just barely leaves it.
 - We could even try padding the menu with a few pixels extra space so the elements are bigger than they appear and the `mouseleave` event fires after leaving that extra padded area. I haven't tried this one before - it may present some complications.
